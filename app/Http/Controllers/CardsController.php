@@ -15,8 +15,9 @@ class CardsController extends Controller
         return view('cards.index', compact('cards'));
     }
 
-    public function show(Card $card) {
 
+    //Shows a single card and all associatted notes
+    public function show(Card $card) {
 
         return view('cards.show', compact('card'));        
     }
